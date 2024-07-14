@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        div{
+            /*element selector*/
+            width:max-content;
+            height:max-content;
+            background: blanchedalmond;
+            margin: auto;
+        }
+
+        #prospective{
+            /* id selector*/
+                width: 200px;
+                height: 200px;
+                background: blueviolet;
+
+        }
+        .s1 {
+            /*class selector*/
+                width:200px;
+                height: 200px;
+                display: block;
+                background:red ;
+        }
+        [href="https://www.google.com"]{
+            /*attribute selector*/
+            text-decoration: none;
+            width: 200px;
+            height: 200px;
+            display:block;
+            background: greenyellow;
+        }
+        #prospective, .s1 {
+            /*combinatiional selector*/
+
+            font-size: 32px;
+        }
+
+        h1::first-letter{
+            
+            font-weight: bold;
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            color:rgb(204, 32, 181);
+        }
+
+        #hed2:hover{
+
+            color: rgb(251, 15, 15);
+            font-size: 64px;
+        }
+
+        #parent{
+            width: 500px;
+            height: 500px;
+            background: rgb(230, 151, 5);
+        }
+        #child1{
+            width: 200px;
+            height: 200px;
+            background:red;
+        }
+        #child2{
+
+            width: 200px;
+            height: 200px;
+            background:greenyellow;
+        }
+
+        #childschild1{
+            width: 100px;
+            height: 100px;
+            background:blueviolet;
+
+        }
+
+        #parent:hover #child2{
+
+            border-radius: 100px;
+        }
+        #child1:hover #childschild1{
+
+            background: rgb(190, 190, 203);
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div>
+        Element selector "elementname{property:value}"
+        <div id="prospective"> id selector "#element{property:value}"</div>
+        <span class="s1"> class selectors ".element{property:value}"</span>
+        <a href="https://www.google.com">Attribute selector ".element[attribute="value"]{property:value}" </a>
+        <h1>Sudo element selector "element :: selector {property: value} "</h1>
+
+    </div>
+    <div id="hed2"> Sudu class selector "element:selector{property: value}"
+    </div>
+
+    <div id="parent">
+        <div id="child1">
+            <div id="childschild1"></div>   
+        </div>
+
+        <div id="child2"></div> 
+    </div>
+
+
+    
+</body>
+</html>
