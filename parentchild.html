@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .p{
+            width: 400px;
+            height:400px;
+            position: relative;
+            margin: auto;
+            /* parent always have realtive position and child have absolute position*/
+        }
+        .common{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+        .pink{
+            background: rgb(231, 139, 10);
+            border-top-right-radius: 200px;
+            border-bottom-left-radius: 200px;
+            
+            
+        }
+        .blue{
+            background: rgb(170, 255, 0);
+            right: 0px;
+            border-top-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+        }
+        .green{
+            background: rgb(38, 19, 184);
+            bottom: 0px;
+            border-bottom-right-radius: 200px;
+            border-top-left-radius: 200px;
+        }
+
+        .yellow{
+            background: rgb(205, 50, 50);
+            bottom: 0px;
+            right: 0px;
+            border-bottom-left-radius: 200px;
+            border-top-right-radius: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="p">
+        <div class="common c1 pink"></div>
+        <div class="common c2 blue"></div>
+        <div class="common c3 green"></div>
+        <div class="common c4 yellow"></div>
+
+
+    </div>
+
+    
+</body>
+</html>
