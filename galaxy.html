@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy</title>
+    <style>
+        body{
+            background-image: url(../Day113072024/img/background.jpg);
+            background-size: cover;
+
+        }
+        .sun {
+            width: 150px;
+            height:150px;
+            border-radius: 150px;
+            background-image: url("img/sun.png");
+            background-size: cover;
+            margin: 200px auto;
+            position: relative;
+        }
+        .earth{
+            width:90px;
+            height:90px;
+            border-radius: 90px;
+            background-image: url("img/earth.png");
+            background-size: cover;
+            position: absolute;
+            bottom: 30px;
+            right: -150px;
+            animation-name: earthanimation;
+            animation-timing-function: linear;
+            animation-duration: 10s;
+            transform-origin: -150px;
+            
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes earthanimation{
+
+            0%{
+                transform:rotate3d(0,0,0,0deg)
+                
+            }
+            100%{
+                transform: rotate3d(0,0,1,360deg);
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sun">
+        <div class="earth">
+
+        </div>
+    </div>
+</body>
+</html>
